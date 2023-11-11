@@ -8,16 +8,13 @@ M4FLAGS += -I${top_srcdir}/m4
 
 bin_PROGRAMS = wrf_io
 
-H_SRCS =    wrf_io.hpp \
+H_SRCS =    wrf_io.hpp
 
-
-wrf_io_SOURCES =    wrf_io.cpp \
-
+wrf_io_SOURCES =    wrf_io.cpp
 
 wrf_io_LDADD =  utils/libwrf_utils.la \
                 io_drivers/libwrf_io_drivers.la \
-                logging/libwrf_logging.la \
-
+                logging/libwrf_logging.la
 
 SUBDIRS = io_drivers utils logging
 DIST_SUBDIRS = io_drivers utils logging

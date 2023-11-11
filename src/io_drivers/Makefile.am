@@ -8,11 +8,9 @@ AM_CPPFLAGS += -I${top_srcdir}/src/logging
 
 noinst_LTLIBRARIES = libwrf_io_drivers.la
 
-C_SRCS =    wrf_io_drivers.cpp \
+C_SRCS =    wrf_io_drivers.cpp
 
-
-H_SRCS =    wrf_io_drivers.hpp \
-
+H_SRCS =    wrf_io_drivers.hpp
 
 if USE_PNETCDF
 C_SRCS += io_drivers/wrf_io_drivers_pnc_nb.cpp

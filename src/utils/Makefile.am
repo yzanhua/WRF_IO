@@ -13,12 +13,10 @@ C_SRCS =    attribute.cpp \
             err.cpp \
             file.cpp \
             variable.cpp \
-            wrf_io_utils.cpp \
-
+            wrf_io_utils.cpp
 
 H_SRCS =    json.hpp \
-            wrf_io_utils.hpp \
-
+            wrf_io_utils.hpp
 
 libwrf_utils_la_SOURCES = $(C_SRCS) $(H_SRCS)
 
