@@ -18,6 +18,6 @@ H_SRCS += io_drivers/wrf_io_drivers_pnc_nb.hpp
 endif
 
 
-libwrf_io_driver_la_SOURCES = $(C_SRCS) $(H_SRCS)
+libwrf_io_drivers_la_SOURCES = $(C_SRCS) $(H_SRCS)
 
 CLEANFILES = core core.* *.gcda *.gcno *.gcov gmon.out
