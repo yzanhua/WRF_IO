@@ -13,10 +13,9 @@ C_SRCS =    wrf_io_drivers.cpp
 H_SRCS =    wrf_io_drivers.hpp
 
 if USE_PNETCDF
-C_SRCS += io_drivers/wrf_io_drivers_pnc_nb.cpp
-H_SRCS += io_drivers/wrf_io_drivers_pnc_nb.hpp
+C_SRCS += pnc_nb/wrf_io_drivers_pnc_nb.cpp
+H_SRCS += pnc_nb/wrf_io_drivers_pnc_nb.hpp
 endif
-
 
 libwrf_io_drivers_la_SOURCES = $(C_SRCS) $(H_SRCS)
 
