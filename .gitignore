@@ -69,3 +69,4 @@ install-sh
 missing
 ltmain.sh
 compile_flags.txt
+compile_commands.json
