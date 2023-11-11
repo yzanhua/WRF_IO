@@ -13,6 +13,7 @@ C_SRCS =    attribute.cpp \
             err.cpp \
             file.cpp \
             variable.cpp \
+            wrf_io_config.cpp \
             wrf_io_utils.cpp
 
 H_SRCS =    json.hpp \
