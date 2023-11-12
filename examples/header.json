@@ -1,0 +1,9021 @@
+{
+  "variables": [
+    {
+      "attributes": [],
+      "num_attributes": 0,
+      "dimensions": [
+        "DateStrLen"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "char",
+      "name": "Times"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "LATITUDE, SOUTH IS NEGATIVE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "degree_north",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "XLAT"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "LONGITUDE, WEST IS NEGATIVE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "degree_east",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "XLONG"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "LAND USE CATEGORY",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "LU_INDEX"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "eta values on half (mass) levels",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "ZNU"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "eta values on full (w) levels",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top_stag"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "ZNW"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "DEPTHS OF CENTERS OF SOIL LAYERS",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "soil_layers_stag"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "ZS"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "THICKNESSES OF SOIL LAYERS",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "soil_layers_stag"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "DZS"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "variance of subgrid-scale orography",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "VAR_SSO"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 106,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Flag for bathymetry in the global attributes for metgrid data",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "-",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "int",
+      "name": "BATHYMETRY_FLAG"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "x-wind component",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m s-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "X",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG_U XLAT_U XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "U"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "y-wind component",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m s-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Y",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG_V XLAT_V XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "V"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "z-wind component",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m s-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top_stag",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "W"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "perturbation geopotential",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m2 s-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top_stag",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "PH"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "base-state geopotential",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m2 s-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top_stag",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "PHB"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "perturbation potential temperature theta-t0",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "K",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "T"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "either 1) pert moist pot temp=(1+Rv/Rd Qv)*(theta)-T0, or 2) pert dry pot temp=t",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "K",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "THM"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SCM ideal surface sensible heat flux",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "HFX_FORCE"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SCM ideal surface latent heat flux",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "LH_FORCE"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SCM ideal surface skin temperature",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "TSK_FORCE"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SCM ideal surface sensible heat flux tendency",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2 s-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "HFX_FORCE_TEND"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SCM ideal surface latent heat flux tendency",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2 s-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "LH_FORCE_TEND"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SCM ideal surface skin temperature tendency",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2 s-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "TSK_FORCE_TEND"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "perturbation dry air mass in column",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Pa",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "MU"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "base state dry air mass in column",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Pa",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "MUB"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "-",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "-",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "NEST_POS"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "perturbation pressure",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Pa",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "P"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "BASE STATE PRESSURE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Pa",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "PB"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "upper weight for vertical stretching",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "FNM"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "lower weight for vertical stretching",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "FNP"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "inverse d(eta) values between full (w) levels",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "RDNW"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "inverse d(eta) values between half (mass) levels",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "RDN"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "d(eta) values between full (w) levels",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "DNW"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "d(eta) values between half (mass) levels",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "DN"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "extrapolation constant",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "CFN"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "extrapolation constant",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "CFN1"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 106,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "T/F flag: this is an ARW ideal simulation",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "-",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "int",
+      "name": "THIS_IS_AN_IDEAL_RUN"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "hydrostatic pressure",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Pa",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "P_HYD"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "QV at 2 M",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "kg kg-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "Q2"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "TEMP at 2 M",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "K",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "T2"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "POT TEMP at 2 M",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "K",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "TH2"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SFC PRESSURE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Pa",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "PSFC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "U at 10 M",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m s-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "U10"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "V at 10 M",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m s-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "V10"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INVERSE X GRID LENGTH",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "RDX"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INVERSE Y GRID LENGTH",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "RDY"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Horizontal grid cell area, using dx, dy, and map factors",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "AREA2D"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Horizontal grid distance: sqrt(area2d)",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "DX2D"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "TIME WEIGHT CONSTANT FOR SMALL STEPS",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "RESM"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ZETA AT MODEL TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "ZETATOP"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "2nd order extrapolation constant",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "CF1"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "2nd order extrapolation constant",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "CF2"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "2nd order extrapolation constant",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "CF3"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 106,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "int",
+      "name": "ITIMESTEP"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "minutes since 2022-06-22 00:00:00",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "minutes since 2022-06-22 00:00:00",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "XTIME"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Water vapor mixing ratio",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "kg kg-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "QVAPOR"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Cloud water mixing ratio",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "kg kg-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "QCLOUD"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Rain water mixing ratio",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "kg kg-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "QRAIN"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Ice mixing ratio",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "kg kg-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "QICE"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Snow mixing ratio",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "kg kg-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "QSNOW"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Graupel mixing ratio",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "kg kg-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "QGRAUP"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Ice Number concentration",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "  kg-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "QNICE"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Rain Number concentration",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "  kg(-1)",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "QNRAIN"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ANNUAL MAX VEG FRACTION",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SHDMAX"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ANNUAL MIN VEG FRACTION",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SHDMIN"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ANNUAL MAX SNOW ALBEDO IN FRACTION",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SNOALB"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SOIL TEMPERATURE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "K",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "soil_layers_stag",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "TSLB"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SOIL MOISTURE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m3 m-3",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "soil_layers_stag",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "SMOIS"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SOIL LIQUID WATER",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m3 m-3",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "soil_layers_stag",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "SH2O"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "RELATIVE SOIL MOISTURE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "soil_layers_stag",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "SMCREL"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SEA ICE FLAG",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SEAICE"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SEA ICE FLAG (PREVIOUS STEP)",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "XICEM"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SURFACE RUNOFF",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "mm",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SFROFF"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "UNDERGROUND RUNOFF",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "mm",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "UDROFF"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 106,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "DOMINANT VEGETATION CATEGORY",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "int",
+      "name": "IVGTYP"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 106,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "DOMINANT SOIL CATEGORY",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "int",
+      "name": "ISLTYP"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "VEGETATION FRACTION",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "VEGFRA"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "GROUND HEAT FLUX",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "GRDFLX"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED GROUND HEAT FLUX",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACGRDFLX"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED MELTED SNOW",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "kg m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACSNOM"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SNOW WATER EQUIVALENT",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "kg m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SNOW"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "PHYSICAL SNOW DEPTH",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SNOWH"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "CANOPY WATER",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "kg m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "CANWAT"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SKIN SEA SURFACE TEMPERATURE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "K",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SSTSK"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "global water depth",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "WATER_DEPTH"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "COS of SOLAR ZENITH ANGLE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "dimensionless",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "COSZEN"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "LEAF AREA INDEX",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m-2/m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "LAI"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Special U at 10 M from MYJSFC",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m s-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "U10E"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Special V at 10 M from MYJSFC",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m s-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "V10E"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "STANDARD DEVIATION OF SUBGRID-SCALE OROGRAPHY",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "VAR"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "TKE from PBL",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m2 s-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top_stag",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "TKE_PBL"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Length scale from PBL",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top_stag",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "EL_PBL"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Map scale factor on mass grid",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "MAPFAC_M"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Map scale factor on u-grid",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "X",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG_U XLAT_U XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "MAPFAC_U"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Map scale factor on v-grid",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Y",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG_V XLAT_V XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "MAPFAC_V"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Map scale factor on mass grid, x direction",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "MAPFAC_MX"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Map scale factor on mass grid, y direction",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "MAPFAC_MY"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Map scale factor on u-grid, x direction",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "X",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG_U XLAT_U XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "MAPFAC_UX"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Map scale factor on u-grid, y direction",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "X",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG_U XLAT_U XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "MAPFAC_UY"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Map scale factor on v-grid, x direction",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Y",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG_V XLAT_V XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "MAPFAC_VX"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Inverse map scale factor on v-grid, x direction",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Y",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG_V XLAT_V XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "MF_VX_INV"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Map scale factor on v-grid, y direction",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Y",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG_V XLAT_V XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "MAPFAC_VY"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Coriolis sine latitude term",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "s-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "F"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Coriolis cosine latitude term",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "s-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "E"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Local sine of map rotation",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SINALPHA"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Local cosine of map rotation",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "COSALPHA"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Terrain Height",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "HGT"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SURFACE SKIN TEMPERATURE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "K",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "TSK"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "PRESSURE TOP OF THE MODEL",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Pa",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "P_TOP"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 106,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "whether VAR_SSO was included in WPS output (beginning V3.4)",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "int",
+      "name": "GOT_VAR_SSO"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "BASE STATE TEMPERATURE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "K",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "T00"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "BASE STATE PRESSURE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Pa",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "P00"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "BASE STATE LAPSE RATE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "TLP"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "TEMP AT WHICH THE BASE T TURNS CONST",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "K",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "TISO"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "BASE STATE LAPSE RATE (DT/D(LN(P)) IN STRATOSPHERE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "K",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "TLP_STRAT"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "BASE STATE PRESSURE AT BOTTOM OF STRATOSPHERE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Pa",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "P_STRAT"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Max map factor in domain",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "MAX_MSFTX"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Max map factor in domain",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "float",
+      "name": "MAX_MSFTY"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED TOTAL CUMULUS PRECIPITATION",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "mm",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "RAINC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED SHALLOW CUMULUS PRECIPITATION",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "mm",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "RAINSH"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED TOTAL GRID SCALE PRECIPITATION",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "mm",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "RAINNC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED TOTAL GRID SCALE SNOW AND ICE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "mm",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SNOWNC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED TOTAL GRID SCALE GRAUPEL",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "mm",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "GRAUPELNC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED TOTAL GRID SCALE HAIL",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "mm",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "HAILNC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XYZ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "CLOUD FRACTION",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "bottom_top",
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 3,
+      "is_partition": true,
+      "type": "float",
+      "name": "CLDFRA"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "DOWNWARD SHORT WAVE FLUX AT GROUND SURFACE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SWDOWN"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "DOWNWARD LONG WAVE FLUX AT GROUND SURFACE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "GLW"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "NORMAL SHORT WAVE FLUX AT GROUND SURFACE (SLOPE-DEPENDENT)",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SWNORM"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED UPWELLING SHORTWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACSWUPT"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED UPWELLING CLEAR SKY SHORTWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACSWUPTC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED DOWNWELLING SHORTWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACSWDNT"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED DOWNWELLING CLEAR SKY SHORTWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACSWDNTC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED UPWELLING SHORTWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACSWUPB"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED UPWELLING CLEAR SKY SHORTWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACSWUPBC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED DOWNWELLING SHORTWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACSWDNB"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED DOWNWELLING CLEAR SKY SHORTWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACSWDNBC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED UPWELLING LONGWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACLWUPT"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED UPWELLING CLEAR SKY LONGWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACLWUPTC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED DOWNWELLING LONGWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACLWDNT"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED DOWNWELLING CLEAR SKY LONGWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACLWDNTC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED UPWELLING LONGWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACLWUPB"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED UPWELLING CLEAR SKY LONGWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACLWUPBC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED DOWNWELLING LONGWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACLWDNB"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED DOWNWELLING CLEAR SKY LONGWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACLWDNBC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS UPWELLING SHORTWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SWUPT"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS UPWELLING CLEAR SKY SHORTWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SWUPTC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS DOWNWELLING SHORTWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SWDNT"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS DOWNWELLING CLEAR SKY SHORTWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SWDNTC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS UPWELLING SHORTWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SWUPB"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS UPWELLING CLEAR SKY SHORTWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SWUPBC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS DOWNWELLING SHORTWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SWDNB"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS DOWNWELLING CLEAR SKY SHORTWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SWDNBC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS UPWELLING LONGWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "LWUPT"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS UPWELLING CLEAR SKY LONGWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "LWUPTC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS DOWNWELLING LONGWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "LWDNT"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS DOWNWELLING CLEAR SKY LONGWAVE FLUX AT TOP",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "LWDNTC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS UPWELLING LONGWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "LWUPB"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS UPWELLING CLEAR SKY LONGWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "LWUPBC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS DOWNWELLING LONGWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "LWDNB"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "INSTANTANEOUS DOWNWELLING CLEAR SKY LONGWAVE FLUX AT BOTTOM",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "LWDNBC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "TOA OUTGOING LONG WAVE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "OLR"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "LATITUDE, SOUTH IS NEGATIVE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "degree_north",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "X",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG_U XLAT_U",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "XLAT_U"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "LONGITUDE, WEST IS NEGATIVE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "degree_east",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "X",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG_U XLAT_U",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "XLONG_U"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "LATITUDE, SOUTH IS NEGATIVE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "degree_north",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Y",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG_V XLAT_V",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "XLAT_V"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "LONGITUDE, WEST IS NEGATIVE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "degree_east",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Y",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG_V XLAT_V",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "XLONG_V"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ALBEDO",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "-",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ALBEDO"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "COMPUTATIONAL GRID LATITUDE, SOUTH IS NEGATIVE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "degree_north",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "CLAT"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "BACKGROUND ALBEDO",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ALBBCK"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SURFACE EMISSIVITY",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "EMISS"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "RESIDUAL OF THE NOAH SURFACE ENERGY BUDGET",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m{-2}",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "NOAHRES"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SOIL TEMPERATURE AT LOWER BOUNDARY",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "K",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "TMN"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "LAND MASK (1 FOR LAND, 2 FOR WATER)",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "XLAND"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "U* IN SIMILARITY THEORY",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m s-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "UST"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "PBL HEIGHT",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "m",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "PBLH"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "UPWARD HEAT FLUX AT THE SURFACE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "HFX"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "UPWARD MOISTURE FLUX AT THE SURFACE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "kg m-2 s-1",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "QFX"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "LATENT HEAT FLUX AT THE SURFACE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "W m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "LH"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED UPWARD HEAT FLUX AT THE SURFACE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACHFX"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "ACCUMULATED UPWARD LATENT HEAT FLUX AT THE SURFACE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "J m-2",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "ACLHF"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "FLAG INDICATING SNOW COVERAGE (1 FOR SNOW COVER)",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SNOWC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "fraction of frozen precipitation",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "-",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SR"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 106,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "0  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "1=original topo from real/0=topo modified by WRF",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "flag",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [],
+      "num_dimensions": 0,
+      "is_partition": false,
+      "type": "int",
+      "name": "SAVE_TOPO_FROM_REAL"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 106,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Array to hold seed for restart, SPPT",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "seed_dim_stag"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "int",
+      "name": "ISEEDARR_SPPT"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 106,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Array to hold seed for restart, SKEBS",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "seed_dim_stag"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "int",
+      "name": "ISEEDARR_SKEBS"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 106,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Array to hold seed for restart, RAND_PERT",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "seed_dim_stag"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "int",
+      "name": "ISEEDARR_RAND_PERTURB"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 106,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Array to hold seed for restart, RAND_PERT2",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "seed_dim_stag"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "int",
+      "name": "ISEEDARRAY_SPP_CONV"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 106,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Array to hold seed for restart, RAND_PERT3",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "seed_dim_stag"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "int",
+      "name": "ISEEDARRAY_SPP_PBL"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 106,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "Array to hold seed for restart, RAND_PERT4",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "seed_dim_stag"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "int",
+      "name": "ISEEDARRAY_SPP_LSM"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "half levels, c1h = d bf / d eta, using znw",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Dimensionless",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "C1H"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "half levels, c2h = (1-c1h)*(p0-pt)",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Pa",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "C2H"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "full levels, c1f = d bf / d eta, using znu",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Dimensionless",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top_stag"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "C1F"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "full levels, c2f = (1-c1f)*(p0-pt)",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Pa",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top_stag"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "C2F"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "half levels, c3h = bh",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Dimensionless",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "C3H"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "half levels, c4h = (eta-bh)*(p0-pt), using znu",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Pa",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "C4H"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "full levels, c3f = bf",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Dimensionless",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top_stag"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "C3F"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "Z  ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "full levels, c4f = (eta-bf)*(p0-pt), using znw",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Pa",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "Z",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 5,
+      "dimensions": [
+        "bottom_top_stag"
+      ],
+      "num_dimensions": 1,
+      "is_partition": false,
+      "type": "float",
+      "name": "C4F"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "base state dry air mass in column",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Pa",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "PCB"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "perturbation dry air mass in column",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "Pa",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "PC"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "LAND MASK (1 FOR LAND, 0 FOR WATER)",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "LANDMASK"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "LAKE MASK (1 FOR LAKE, 0 FOR NON-LAKE)",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "LAKEMASK"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SEA SURFACE TEMPERATURE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "K",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SST"
+    },
+    {
+      "attributes": [
+        {
+          "attr_name": "FieldType",
+          "value": 104,
+          "type": "int"
+        },
+        {
+          "attr_name": "MemoryOrder",
+          "value": "XY ",
+          "type": "str"
+        },
+        {
+          "attr_name": "description",
+          "value": "SEA SURFACE TEMPERATURE FROM WRFLOWINPUT FILE",
+          "type": "str"
+        },
+        {
+          "attr_name": "units",
+          "value": "K",
+          "type": "str"
+        },
+        {
+          "attr_name": "stagger",
+          "value": "",
+          "type": "str"
+        },
+        {
+          "attr_name": "coordinates",
+          "value": "XLONG XLAT XTIME",
+          "type": "str"
+        }
+      ],
+      "num_attributes": 6,
+      "dimensions": [
+        "e_sn",
+        "e_we"
+      ],
+      "num_dimensions": 2,
+      "is_partition": true,
+      "type": "float",
+      "name": "SST_INPUT"
+    }
+  ],
+  "global_attributes": [
+    {
+      "attr_name": "TITLE",
+      "value": " OUTPUT FROM WRF V4.4.1 MODEL",
+      "type": "str"
+    },
+    {
+      "attr_name": "START_DATE",
+      "value": "2022-06-22_00:00:00",
+      "type": "str"
+    },
+    {
+      "attr_name": "SIMULATION_START_DATE",
+      "value": "2022-06-22_00:00:00",
+      "type": "str"
+    },
+    {
+      "attr_name": "WEST-EAST_GRID_DIMENSION",
+      "value": 1901,
+      "type": "int"
+    },
+    {
+      "attr_name": "SOUTH-NORTH_GRID_DIMENSION",
+      "value": 1301,
+      "type": "int"
+    },
+    {
+      "attr_name": "BOTTOM-TOP_GRID_DIMENSION",
+      "value": 35,
+      "type": "int"
+    },
+    {
+      "attr_name": "DX",
+      "value": 2500.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "DY",
+      "value": 2500.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "AERCU_OPT",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "AERCU_FCT",
+      "value": 1.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "IDEAL_CASE",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "DIFF_6TH_SLOPEOPT",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "AUTO_LEVELS_OPT",
+      "value": 2,
+      "type": "int"
+    },
+    {
+      "attr_name": "DIFF_6TH_THRESH",
+      "value": 0.1,
+      "type": "float"
+    },
+    {
+      "attr_name": "DZBOT",
+      "value": 50.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "DZSTRETCH_S",
+      "value": 1.3,
+      "type": "float"
+    },
+    {
+      "attr_name": "DZSTRETCH_U",
+      "value": 1.1,
+      "type": "float"
+    },
+    {
+      "attr_name": "SKEBS_ON",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "USE_Q_DIABATIC",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "GRIDTYPE",
+      "value": "C",
+      "type": "str"
+    },
+    {
+      "attr_name": "DIFF_OPT",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "KM_OPT",
+      "value": 4,
+      "type": "int"
+    },
+    {
+      "attr_name": "DAMP_OPT",
+      "value": 3,
+      "type": "int"
+    },
+    {
+      "attr_name": "DAMPCOEF",
+      "value": 0.2,
+      "type": "float"
+    },
+    {
+      "attr_name": "KHDIF",
+      "value": 0.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "KVDIF",
+      "value": 0.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "MP_PHYSICS",
+      "value": 8,
+      "type": "int"
+    },
+    {
+      "attr_name": "RA_LW_PHYSICS",
+      "value": 4,
+      "type": "int"
+    },
+    {
+      "attr_name": "RA_SW_PHYSICS",
+      "value": 4,
+      "type": "int"
+    },
+    {
+      "attr_name": "SF_SFCLAY_PHYSICS",
+      "value": 2,
+      "type": "int"
+    },
+    {
+      "attr_name": "SF_SURFACE_PHYSICS",
+      "value": 2,
+      "type": "int"
+    },
+    {
+      "attr_name": "BL_PBL_PHYSICS",
+      "value": 2,
+      "type": "int"
+    },
+    {
+      "attr_name": "CU_PHYSICS",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "SF_LAKE_PHYSICS",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "SURFACE_INPUT_SOURCE",
+      "value": 3,
+      "type": "int"
+    },
+    {
+      "attr_name": "SST_UPDATE",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "GHG_INPUT",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "GRID_FDDA",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "GFDDA_INTERVAL_M",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "GFDDA_END_H",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "GRID_SFDDA",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "SGFDDA_INTERVAL_M",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "SGFDDA_END_H",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "HYPSOMETRIC_OPT",
+      "value": 2,
+      "type": "int"
+    },
+    {
+      "attr_name": "USE_THETA_M",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "GWD_OPT",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "SF_URBAN_PHYSICS",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "SF_SURFACE_MOSAIC",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "SF_OCEAN_PHYSICS",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "SHCU_PHYSICS",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "MFSHCONV",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "FEEDBACK",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "SMOOTH_OPTION",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "SWRAD_SCAT",
+      "value": 1.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "W_DAMPING",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "DT",
+      "value": 15.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "RADT",
+      "value": 10.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "BLDT",
+      "value": 0.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "CUDT",
+      "value": 5.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "AER_OPT",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "SWINT_OPT",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "AER_TYPE",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "AER_AOD550_OPT",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "AER_ANGEXP_OPT",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "AER_SSA_OPT",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "AER_ASY_OPT",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "AER_AOD550_VAL",
+      "value": 0.12,
+      "type": "float"
+    },
+    {
+      "attr_name": "AER_ANGEXP_VAL",
+      "value": 1.3,
+      "type": "float"
+    },
+    {
+      "attr_name": "AER_SSA_VAL",
+      "value": 0.85,
+      "type": "float"
+    },
+    {
+      "attr_name": "AER_ASY_VAL",
+      "value": 0.9,
+      "type": "float"
+    },
+    {
+      "attr_name": "MOIST_ADV_OPT",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "SCALAR_ADV_OPT",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "TKE_ADV_OPT",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "DIFF_6TH_OPT",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "DIFF_6TH_FACTOR",
+      "value": 0.12,
+      "type": "float"
+    },
+    {
+      "attr_name": "OBS_NUDGE_OPT",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "BUCKET_MM",
+      "value": -1.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "BUCKET_J",
+      "value": -1.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "PREC_ACC_DT",
+      "value": 0.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "ISFTCFLX",
+      "value": 2,
+      "type": "int"
+    },
+    {
+      "attr_name": "ISHALLOW",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "ISFFLX",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "ICLOUD",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "ICLOUD_CU",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "TRACER_PBLMIX",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "SCALAR_PBLMIX",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "YSU_TOPDOWN_PBLMIX",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "GRAV_SETTLING",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "CLDOVRLP",
+      "value": 2,
+      "type": "int"
+    },
+    {
+      "attr_name": "IDCOR",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "DFI_OPT",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "NTASKS_X",
+      "value": 32,
+      "type": "int"
+    },
+    {
+      "attr_name": "NTASKS_Y",
+      "value": 64,
+      "type": "int"
+    },
+    {
+      "attr_name": "NTASKS_TOTAL",
+      "value": 2048,
+      "type": "int"
+    },
+    {
+      "attr_name": "SIMULATION_INITIALIZATION_TYPE",
+      "value": "REAL-DATA CASE",
+      "type": "str"
+    },
+    {
+      "attr_name": "WEST-EAST_PATCH_START_UNSTAG",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "WEST-EAST_PATCH_END_UNSTAG",
+      "value": 1900,
+      "type": "int"
+    },
+    {
+      "attr_name": "WEST-EAST_PATCH_START_STAG",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "WEST-EAST_PATCH_END_STAG",
+      "value": 1901,
+      "type": "int"
+    },
+    {
+      "attr_name": "SOUTH-NORTH_PATCH_START_UNSTAG",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "SOUTH-NORTH_PATCH_END_UNSTAG",
+      "value": 1300,
+      "type": "int"
+    },
+    {
+      "attr_name": "SOUTH-NORTH_PATCH_START_STAG",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "SOUTH-NORTH_PATCH_END_STAG",
+      "value": 1301,
+      "type": "int"
+    },
+    {
+      "attr_name": "BOTTOM-TOP_PATCH_START_UNSTAG",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "BOTTOM-TOP_PATCH_END_UNSTAG",
+      "value": 34,
+      "type": "int"
+    },
+    {
+      "attr_name": "BOTTOM-TOP_PATCH_START_STAG",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "BOTTOM-TOP_PATCH_END_STAG",
+      "value": 35,
+      "type": "int"
+    },
+    {
+      "attr_name": "GRID_ID",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "PARENT_ID",
+      "value": 0,
+      "type": "int"
+    },
+    {
+      "attr_name": "I_PARENT_START",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "J_PARENT_START",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "PARENT_GRID_RATIO",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "CEN_LAT",
+      "value": 40.00001,
+      "type": "float"
+    },
+    {
+      "attr_name": "CEN_LON",
+      "value": -98.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "TRUELAT1",
+      "value": 30.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "TRUELAT2",
+      "value": 60.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "MOAD_CEN_LAT",
+      "value": 40.00001,
+      "type": "float"
+    },
+    {
+      "attr_name": "STAND_LON",
+      "value": -98.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "POLE_LAT",
+      "value": 90.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "POLE_LON",
+      "value": 0.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "GMT",
+      "value": 0.0,
+      "type": "float"
+    },
+    {
+      "attr_name": "JULYR",
+      "value": 2022,
+      "type": "int"
+    },
+    {
+      "attr_name": "JULDAY",
+      "value": 173,
+      "type": "int"
+    },
+    {
+      "attr_name": "MAP_PROJ",
+      "value": 1,
+      "type": "int"
+    },
+    {
+      "attr_name": "MAP_PROJ_CHAR",
+      "value": "Lambert Conformal",
+      "type": "str"
+    },
+    {
+      "attr_name": "MMINLU",
+      "value": "MODIFIED_IGBP_MODIS_NOAH",
+      "type": "str"
+    },
+    {
+      "attr_name": "NUM_LAND_CAT",
+      "value": 21,
+      "type": "int"
+    },
+    {
+      "attr_name": "ISWATER",
+      "value": 17,
+      "type": "int"
+    },
+    {
+      "attr_name": "ISLAKE",
+      "value": 21,
+      "type": "int"
+    },
+    {
+      "attr_name": "ISICE",
+      "value": 15,
+      "type": "int"
+    },
+    {
+      "attr_name": "ISURBAN",
+      "value": 13,
+      "type": "int"
+    },
+    {
+      "attr_name": "ISOILWATER",
+      "value": 14,
+      "type": "int"
+    },
+    {
+      "attr_name": "HYBRID_OPT",
+      "value": 2,
+      "type": "int"
+    },
+    {
+      "attr_name": "ETAC",
+      "value": 0.2,
+      "type": "float"
+    }
+  ],
+  "dimensions": [
+    {
+      "name": "e_we",
+      "value": -1
+    },
+    {
+      "name": "e_sn",
+      "value": -2
+    },
+    {
+      "name": "Time",
+      "value": -3
+    },
+    {
+      "name": "DateStrLen",
+      "value": 19
+    },
+    {
+      "name": "west_east",
+      "value": 1900
+    },
+    {
+      "name": "south_north",
+      "value": 1300
+    },
+    {
+      "name": "bottom_top",
+      "value": 34
+    },
+    {
+      "name": "bottom_top_stag",
+      "value": 35
+    },
+    {
+      "name": "soil_layers_stag",
+      "value": 4
+    },
+    {
+      "name": "west_east_stag",
+      "value": 1901
+    },
+    {
+      "name": "south_north_stag",
+      "value": 1301
+    },
+    {
+      "name": "seed_dim_stag",
+      "value": 8
+    }
+  ]
+}

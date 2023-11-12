@@ -1,0 +1,14 @@
+{
+    "api": "pnc_nb",
+    "strategy": "canonical",
+     "ts_total": 360,      
+     "ts_hist_interval": 30,
+     "ts_rst_interval": 3600,
+     "ts_per_hist_file": 10000,
+     "e_we": 55,
+     "e_sn": 67,
+     "sleep_seconds": 0,
+     "out_prefix": "./wrfout_",
+     "var_def_file": "./header.json",
+     "debug_level": 30
+}
