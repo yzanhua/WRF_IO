@@ -1,6 +1,7 @@
 #include "wrf_io_utils.hpp"
 
 using wrf_io_utils::attribute;
+vector<attribute> attribute::global_attrs;
 
 void attribute::print (int indent = 0) {
     string base_indent_str (indent, ' ');

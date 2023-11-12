@@ -46,6 +46,7 @@ void wrf_io_config::print (bool rank0_only = true) {
 
     printf ("Output prefix: %s\n", this->out_prefix);
     printf ("Var def file: %s\n", this->var_def_file);
+    printf ("Debug level: %d\n", this->debug_level);
 }
 
 bool wrf_io_config::check_config() {return true;}

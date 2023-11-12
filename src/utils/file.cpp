@@ -2,8 +2,10 @@
 
 using wrf_io_utils::wrf_io_file;
 
-wrf_io_file::wrf_io_file (const file_type type) : type (type), status (invalid), curr_ts (0) {}
-
+wrf_io_file::wrf_io_file (const file_type type)
+    : type (type), status (invalid), curr_ts (0), mode (read_write) {}
+wrf_io_file::wrf_io_file (const file_type type, const wrf_io_file_mode mode)
+    : type (type), status (invalid), curr_ts (0), mode (mode) {}
 void wrf_io_file::print () {
 #ifndef WRF_IO_DEBUG
     return;

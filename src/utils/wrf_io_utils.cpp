@@ -152,6 +152,14 @@ int wrf_io_utils::read_json_file (const char *file_name, wrf_io_config &cfg) {
                  sizeof (cfg.var_def_file));
     }
 
+    // debug_level
+    if (!jsonData["debug_level"].is_number_integer ()) {
+        check_err (ERROR, __LINE__, __FILE__, "Error: debug_level is not an integer.\n");
+        return ERROR;
+    } else {
+        cfg.debug_level = jsonData["debug_level"];
+    }
+
     return NO_ERROR;
 }  // end of read_json_file
 

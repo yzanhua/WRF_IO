@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef _WRF_IO_H__
-#define _WRF_IO_H__
+#ifndef _SRC_WRF_IO_HPP__
+#define _SRC_WRF_IO_HPP__
 
 #ifndef HAVE_CONFIG_H
 #define HAVE_CONFIG_H
@@ -17,4 +17,4 @@
 
 #include <mpi.h>
 
-#endif /* _WRF_IO_H__ */
+#endif /* _SRC_WRF_IO_HPP__ */

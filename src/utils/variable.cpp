@@ -2,6 +2,10 @@
 
 using wrf_io_utils::variable;
 
+vector<variable> variable::variables;
+vector<int> variable::pt_counts;
+vector<int> variable::pt_starts;
+
 int get_size_of_type (string type);
 
 void variable::set_data () {

@@ -21,8 +21,10 @@ typedef enum { history, restart } file_type;
 typedef enum { invalid, valid } io_status;
 typedef enum wrf_io_api { pnc_b, pnc_nb, undef_api } wrf_io_api;
 typedef enum wrf_io_strategy { canonical, blob, log, undef_io } wrf_io_strategy;
+typedef enum wrf_io_file_mode { read_only, write_only, read_write } wrf_io_file_mode ;
 
 class wrf_io_file {
+   public:
     unsigned ts_created;
     unsigned curr_ts;
     string file_name;
@@ -33,9 +35,11 @@ class wrf_io_file {
     // for pnc_nb
     size_t write_size_per_ts     = 0;
     bool write_size_per_ts_valid = false;
+    wrf_io_file_mode mode;
 
     // file_stat(unsigned ts_created, file_type type, char* out_prefix);
     wrf_io_file (file_type type);
+    wrf_io_file (file_type type, wrf_io_file_mode mode);
     void print ();
     void clear ();
     void reset (unsigned ts_created, char *out_prefix);
@@ -67,6 +71,9 @@ typedef struct wrf_io_config {
 
     // sleep time
     unsigned sleep_sec;  // sleep time to emulate computations.
+
+    // debug level
+    int debug_level;
 
     void print (bool rank0_only);
     bool check_config ();
