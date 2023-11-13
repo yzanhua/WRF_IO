@@ -7,7 +7,7 @@
 #include "wrf_io.hpp"
 using wrf_io_logging::log;
 
-#ifdef WRF_IO_DEBUG
+#ifdef WRF_IO_LOGGING
 using std::cout;
 using std::endl;
 using std::localtime;
@@ -21,14 +21,14 @@ int log::rank      = -1;
 int log::log_level = -1;
 
 void log::init (int rank, int log_level) {
-#ifdef WRF_IO_DEBUG
+#ifdef WRF_IO_LOGGING
     log::rank      = rank;
     log::log_level = log_level;
 #endif
 }  // end log::init
 
 void log::print (char *msg, int line, char *file, int level, bool rank0_only) {
-#ifdef WRF_IO_DEBUG
+#ifdef WRF_IO_LOGGING
     if (rank0_only && rank != 0) return;
     if (level == -1) { level = (indent_level + 1) * 10; }
     if (level < 0 || level > log_level) return;
@@ -43,7 +43,7 @@ void log::print (char *msg, int line, char *file, int level, bool rank0_only) {
 }  // end log::print
 
 void log::print (string msg, int line, char *file, int level, bool rank0_only) {
-#ifdef WRF_IO_DEBUG
+#ifdef WRF_IO_LOGGING
     log::print (msg.c_str (), line, file, level, rank0_only);
 #endif
 }  // end log::print
@@ -51,7 +51,7 @@ void log::print (string msg, int line, char *file, int level, bool rank0_only) {
 // void log::enter (int line, const char *func, const char *file, int level, bool rank0_only) {
 void log::enter (
     const char *msg, int line, const char *func, const char *file, int level, bool rank0_only) {
-#ifdef WRF_IO_DEBUG
+#ifdef WRF_IO_LOGGING
     if (rank0_only && rank != 0) return;
     indent_level++;
     if (level == -1) { level = indent_level * 10; }
@@ -74,7 +74,7 @@ void log::enter (
 #endif
 }
 void log::enter (int line, const char *func, const char *file, int level, bool rank0_only) {
-#ifdef WRF_IO_DEBUG
+#ifdef WRF_IO_LOGGING
     log::enter (nullptr, line, func, file, level, rank0_only);
 #endif
 }
@@ -82,7 +82,7 @@ void log::enter (int line, const char *func, const char *file, int level, bool r
 // void log::leave (int line, const char *func, const char *file, int level, bool rank0_only) {
 void log::leave (
     const char *msg, int line, const char *func, const char *file, int level, bool rank0_only) {
-#ifdef WRF_IO_DEBUG
+#ifdef WRF_IO_LOGGING
     if (rank0_only && rank != 0) return;
     indent_level--;
     if (level == -1) { level = (indent_level + 1) * 10; }
@@ -106,7 +106,7 @@ void log::leave (
 }
 
 void log::leave (int line, const char *func, const char *file, int level, bool rank0_only) {
-#ifdef WRF_IO_DEBUG
+#ifdef WRF_IO_LOGGING
     log::leave (nullptr, line, func, file, level, rank0_only);
 #endif
 }

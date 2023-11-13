@@ -8,6 +8,18 @@ AC_CONFIG_MACRO_DIRS([m4])
 
 UD_PROG_M4
 
+# Add options for logging
+AC_ARG_ENABLE([logging],
+    [AS_HELP_STRING([--enable-logging],
+                    [Enable logging feature.
+                     @<:@default: disabled@:>@])],
+    [logging=${enableval}], [logging=no]
+)
+AM_CONDITIONAL(WRF_IO_LOGGING, [test "x$logging" = xyes])
+if test "x${logging}" = xyes; then
+   AC_DEFINE([WRF_IO_LOGGING], [1], [Enable debug mode])
+fi
+
 # Add options for DEBUG
 AC_ARG_ENABLE([debug],
     [AS_HELP_STRING([--enable-debug],
@@ -16,6 +28,7 @@ AC_ARG_ENABLE([debug],
     [debug=${enableval}], [debug=no]
 )
 AM_CONDITIONAL(WRF_IO_DEBUG, [test "x$debug" = xyes])
+
 if test "x${debug}" = xyes; then
    dnl add -g flag if not presented
    dnl remove all -O and -fast flags

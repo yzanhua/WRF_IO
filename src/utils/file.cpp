@@ -7,7 +7,7 @@ wrf_io_file::wrf_io_file (const file_type type)
 wrf_io_file::wrf_io_file (const file_type type, const wrf_io_file_mode mode)
     : type (type), status (invalid), curr_ts (0), mode (mode) {}
 void wrf_io_file::print () {
-#ifndef WRF_IO_DEBUG
+#ifndef WRF_IO_LOGGING
     return;
 #endif
 
