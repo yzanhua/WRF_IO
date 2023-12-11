@@ -215,9 +215,6 @@ int wrf_io_utils::get_variables_attrs (wrf_io_config &config) {
 
     parse_json_data (jsonData);
 
-    // set data
-    for (size_t i = 0; i < variable::variables.size (); i++) { variable::variables[i].set_data (); }
-
     // Don't forget to free the memory when you're done
     if (file_contents) {
         free (file_contents);
@@ -226,6 +223,18 @@ int wrf_io_utils::get_variables_attrs (wrf_io_config &config) {
 
     return NO_ERROR;
 }  // end of get_variables_attrs
+
+void wrf_io_utils::set_variable_data () {
+    for (size_t i = 0; i < variable::variables.size (); i++) { variable::variables[i].set_data (); }
+}
+void wrf_io_utils::clear_variable_data () {
+    for (size_t i = 0; i < variable::variables.size (); i++) {
+        if (variable::variables[i].data != NULL) {
+            free (variable::variables[i].data);
+            variable::variables[i].data = NULL;
+        }
+    }
+}
 
 void parse_json_data (json &jsonData) {
     size_t cnt = jsonData["dimensions"].size ();

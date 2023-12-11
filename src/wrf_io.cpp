@@ -186,27 +186,27 @@ int main (int argc, char **argv) {
     wrf_io_utils::get_config (argv[1], cfg);
     cfg.print (true);
     log::log_level = cfg.debug_level;
+    wrf_io_utils::get_variables_attrs (cfg);
 
     split_communicator (cfg);
 
-    variable::calculate_parition (cfg);
-    wrf_io_utils::get_variables_attrs (cfg);
-
-    unsigned org_e_we = cfg.e_we;
-    unsigned org_e_sn = cfg.e_sn;
-    for (int iter = 0; iter < 3; iter++) {
+    unsigned base     = (unsigned)sqrt (cfg.np * 2);
+    unsigned min_size = base * 4;
+    unsigned max_size = base * 4 * 16;
+    for (int iter = 0; iter < 1; iter++) {
         cfg.iter = iter;
-
-        for (unsigned e_we = 50; e_we < org_e_we; e_we += 50) {
-            for (unsigned e_sn = 50; e_sn < org_e_sn; e_sn += 50) {
+        for (unsigned e_we = min_size; e_we <= max_size; e_we += min_size * 2) {
+            for (unsigned e_sn = min_size; e_sn <= max_size; e_sn += min_size) {
                 cfg.e_we = e_we;
                 cfg.e_sn = e_sn;
+
+                variable::calculate_parition (cfg);
+                wrf_io_utils::set_variable_data ();
+
                 wrf_io_core (cfg);
+                wrf_io_utils::clear_variable_data ();
             }
         }
-        cfg.e_we = org_e_we;
-        cfg.e_sn = org_e_sn;
-        wrf_io_core (cfg);
     }
 
 err_out:;

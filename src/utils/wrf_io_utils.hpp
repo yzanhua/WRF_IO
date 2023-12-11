@@ -149,6 +149,8 @@ void check_err (int err, int line, const char *file_name, const char *msg);
 int read_json_file (const char *file_name, wrf_io_config &cfg);
 int get_config (const char *file_name, wrf_io_config &config);
 int get_variables_attrs (wrf_io_config &config);
+void set_variable_data ();
+void clear_variable_data ();
 
 }  // namespace wrf_io_utils
 
