@@ -167,9 +167,9 @@ int wrf_io_utils::get_config (const char *file_name, wrf_io_config &config) {
     int rank, np;
     int err;
 
-    err = MPI_Comm_rank (MPI_COMM_WORLD, &rank);
+    err = MPI_Comm_rank (config.io_comm, &rank);
     check_err (err, __LINE__, __FILE__, "Error getting rank.");
-    err = MPI_Comm_size (MPI_COMM_WORLD, &np);
+    err = MPI_Comm_size (config.io_comm, &np);
     check_err (err, __LINE__, __FILE__, "Error getting np.");
 
     if (rank == 0) {

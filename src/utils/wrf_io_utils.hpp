@@ -23,27 +23,6 @@ typedef enum wrf_io_api { pnc_b, pnc_nb, undef_api } wrf_io_api;
 typedef enum wrf_io_strategy { canonical, blob, log, undef_io } wrf_io_strategy;
 typedef enum wrf_io_file_mode { read_only, write_only, read_write } wrf_io_file_mode ;
 
-class wrf_io_file {
-   public:
-    unsigned ts_created;
-    unsigned curr_ts;
-    string file_name;
-    io_status status;
-    int fid;
-    const file_type type;
-
-    // for pnc_nb
-    size_t write_size_per_ts     = 0;
-    bool write_size_per_ts_valid = false;
-    wrf_io_file_mode mode;
-
-    // file_stat(unsigned ts_created, file_type type, char* out_prefix);
-    wrf_io_file (file_type type);
-    wrf_io_file (file_type type, wrf_io_file_mode mode);
-    void print ();
-    void clear ();
-    void reset (unsigned ts_created, char *out_prefix);
-};
 
 typedef struct wrf_io_config {
     // mpi related
@@ -75,10 +54,36 @@ typedef struct wrf_io_config {
     // debug level
     int debug_level;
 
+    // group num
+    int group_num;
+    unsigned iter;
+
     void print (bool rank0_only);
     bool check_config ();
 
 } wrf_io_config;
+
+class wrf_io_file {
+   public:
+    unsigned ts_created;
+    unsigned curr_ts;
+    string file_name;
+    io_status status;
+    int fid;
+    const file_type type;
+
+    // for pnc_nb
+    size_t write_size_per_ts     = 0;
+    bool write_size_per_ts_valid = false;
+    wrf_io_file_mode mode;
+
+    // file_stat(unsigned ts_created, file_type type, char* out_prefix);
+    wrf_io_file (file_type type);
+    wrf_io_file (file_type type, wrf_io_file_mode mode);
+    void print ();
+    void clear ();
+    void reset (unsigned ts_created, wrf_io_config &cfg);
+};
 
 class dimension {
    public:
@@ -139,6 +144,7 @@ class variable {
     }
 };
 
+void check_err_set_comm (MPI_Comm comm);
 void check_err (int err, int line, const char *file_name, const char *msg);
 int read_json_file (const char *file_name, wrf_io_config &cfg);
 int get_config (const char *file_name, wrf_io_config &config);

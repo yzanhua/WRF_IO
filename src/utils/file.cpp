@@ -1,5 +1,6 @@
 #include "wrf_io_utils.hpp"
 
+using wrf_io_utils::wrf_io_config;
 using wrf_io_utils::wrf_io_file;
 
 wrf_io_file::wrf_io_file (const file_type type)
@@ -46,14 +47,24 @@ void wrf_io_file::clear () {
     this->status     = invalid;
 }
 
-void wrf_io_file::reset (unsigned ts_created, char *out_prefix) {
+void wrf_io_file::reset (unsigned ts_created, wrf_io_config &cfg) {
     this->ts_created = ts_created;
     switch (this->type) {
         case history:
-            this->file_name = string (out_prefix) + "wrfout_" + std::to_string (ts_created);
+            this->file_name = string (cfg.out_prefix) + "wrfout";
+            this->file_name += "_i" + std::to_string (cfg.iter);
+            this->file_name += "_g" + std::to_string (cfg.group_num);
+            this->file_name += "_we" + std::to_string (cfg.e_we);
+            this->file_name += "_sn" + std::to_string (cfg.e_sn);
+            this->file_name += "_c" + std::to_string (ts_created);
             break;
         case restart:
-            this->file_name = string (out_prefix) + "wrfrst_" + std::to_string (ts_created);
+            this->file_name = string (cfg.out_prefix) + "wrfrst";
+            this->file_name += "_i" + std::to_string (cfg.iter);
+            this->file_name += "_g" + std::to_string (cfg.group_num);
+            this->file_name += "_we" + std::to_string (cfg.e_we);
+            this->file_name += "_sn" + std::to_string (cfg.e_sn);
+            this->file_name += "_c" + std::to_string (ts_created);
             break;
     }
 }
